@@ -1,6 +1,9 @@
 CHANGELOG
 ==========
 
+version 0.0.3 (released 2018-01-10)
+  * Use float for focal_length value
+
 version 0.0.2 (released 2018-01-10)
   * Fixed pgm export for vignetting calculation
 
