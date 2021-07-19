@@ -41,7 +41,6 @@ import re
 import math
 import multiprocessing
 import numpy as np
-import struct
 import subprocess
 import shutil
 import tarfile
