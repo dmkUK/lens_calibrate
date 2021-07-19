@@ -626,8 +626,13 @@ def tca_correct(input_file, original_file, exif_data, complex_tca=False):
             print("Could not find tca_correct")
             return None
 
-        tca_data = re.match(r"-r [.0]+:(?P<br>[-.0-9]+):[.0]+:(?P<vr>[-.0-9]+) -b [.0]+:(?P<bb>[-.0-9]+):[.0]+:(?P<vb>[-.0-9]+)",
-                            output.decode('ascii')).groupdict()
+        tca_data_match = re.match(r"-r [.0]+:(?P<br>[-.0-9]+):[.0]+:(?P<vr>[-.0-9]+) -b [.0]+:(?P<bb>[-.0-9]+):[.0]+:(?P<vb>[-.0-9]+)",
+                            output.decode('ascii'))
+        if tca_data_match is None:
+            print("Could not find tca correction data")
+            return None
+
+        tca_data = tca_data_match.groupdict()
 
         tca_config = configparser.ConfigParser()
         tca_config[exif_data['lens_model']] = {
