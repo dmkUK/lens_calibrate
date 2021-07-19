@@ -692,7 +692,7 @@ def load_pgm(filename):
     elif maxval == 65535:
         dt = np.dtype(np.uint16)
     elif maxval == 4294967295:
-        dt = np.dtype(np.float)
+        dt = np.dtype(np.float32)
     else:
         raise ValueError("Not a NetPGM file: '%s'" % filename)
     dt = dt.newbyteorder('B')
