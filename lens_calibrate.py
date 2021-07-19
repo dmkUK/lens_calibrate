@@ -50,7 +50,6 @@ from subprocess import DEVNULL
 from scipy.optimize.minpack import leastsq
 
 from pyexiv2.metadata import ImageMetadata
-from pyexiv2.exif import ExifTag
 
 from PyPDF2 import PdfFileMerger
 
