@@ -326,6 +326,9 @@ def has_exif_tag(data, tag):
     return tag in data
 
 def image_read_exif(filename):
+    focal_length = 0.0
+    aperture = 0.0
+
     data = ImageMetadata(filename)
 
     # This reads the metadata and closes the file
