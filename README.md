@@ -2,8 +2,8 @@ lens_calibrate.py
 =================
 
 This repository is a version of <a href="https://gitlab.com/cryptomilk">Andreas Schneider's</a> original repository cloned and imported here from <a href="https://gitlab.com/cryptomilk/lens_calibrate">Gitlab</a>
-
-He is here on Github as <a href="https://github.com/cryptomilk">"Cryptomilk"</a>
+ 
+He is here on Github as <a href="https://github.com/cryptomilk">@Cryptomilk</a> @Cryptomilk
 
 I ran in to trouble using the script to calibrate my four-thirds mount Olympus DSLR lens collection which have patchy support on lensfun and as they are now discontinued and can only be used with an an adapter on micro 4/3 the chances of them being supported are minimal. 
 As a total novice in coding with no experience of python this code probably contains a bag full of errors, but I have modified the script to extract more metadata using <a href="https://exiftool.org/">ExifTool by Phil Harvey</a> and better suit my work flow.
