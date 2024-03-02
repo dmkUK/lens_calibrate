@@ -1220,7 +1220,7 @@ def run_distortion():
 
         create_lenses_config(sorted_lenses_exif_group)
 
-def create_tca_correction(export_path, path, filename, sidecar_file, complex_tca,):
+def create_tca_correction(export_path, path, filename, sidecar_file, complex_tca):
     # --------------------------------
     # debug_print_out('create_tca_correction function', '')
     # --------------------------------
@@ -1236,7 +1236,7 @@ def create_tca_correction(export_path, path, filename, sidecar_file, complex_tca
     print("Processing %s ... " % (input_file), flush=True)
     output_file = convert_raw_for_tca(input_file, sidecar_file, output_file)
 
-    tca_correct(output_file, input_file, exif_data, complex_tca,)
+    tca_correct(output_file, input_file, exif_data, complex_tca)
 
     return True
 
